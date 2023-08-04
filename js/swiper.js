@@ -1,9 +1,3 @@
-const media1 = 1600;
-const media2 = 1500;
-const media3 = 1290;
-const media4 = 900;
-const media5 = 700;
-
 let number = 5;
 
 window.addEventListener("load",()=>{
