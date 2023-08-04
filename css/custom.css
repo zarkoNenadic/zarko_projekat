@@ -526,3 +526,7 @@ ul {
     width: 80%; }
   .about-img-div {
     text-align: center; } }
+
+@media (max-width: 700px) {
+  .product-position {
+    left: 40%; } }

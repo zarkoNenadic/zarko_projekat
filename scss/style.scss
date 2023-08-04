@@ -737,3 +737,10 @@ $grey-line-style: (
     }
 
 }
+
+@media(max-width:700px) {
+
+    .product-position {
+        left: 40%;
+    }
+}
