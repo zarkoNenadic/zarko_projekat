@@ -547,6 +547,10 @@ $grey-line-style: (
     }
 }
 
+.footer-container {
+    padding: 55px 0 45px 0;
+}
+
 ///////////////////////////////// Burger menu
 
 .burger-menu {
@@ -688,6 +692,25 @@ $grey-line-style: (
         gap: 1rem;
     }
 
+
+    .footer {
+        height: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .web-links {
+        padding-right: 2rem;
+    }
+
+    .footer-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width:1000px) {
@@ -711,6 +734,10 @@ $grey-line-style: (
 
     .number {
         margin-top: 5rem;
+    }
+
+    .about-main-heading {
+        padding-top: 2rem;
     }
 }
 
@@ -742,5 +769,39 @@ $grey-line-style: (
 
     .product-position {
         left: 40%;
+    }
+
+    .section-products-text {
+        padding: 5% 10%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .section-brends {
+        padding: 4rem;
+    }
+
+    .footer-p:first-child {
+        padding: 1rem 2rem;
+    }
+
+    .card-img {
+        width: 80%;
+    }
+
+    .product-position {
+        left: 35%;
+    }
+
+}
+
+@media (max-width:350px) {
+    .section-brends {
+        padding: 2rem;
+    }
+
+    .section-cards {
+        padding: 5rem 5rem;
     }
 }

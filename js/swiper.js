@@ -26,7 +26,7 @@ window.addEventListener("resize", (e)=>{
     number = 3;
   }else if(browserWidthChanged < 900 && browserWidthChanged >= 700){
     number = 2;
-  }else if(browserWidthChanged < 700 && browserWidthChanged >= 350){
+  }else if(browserWidthChanged < 700 && browserWidthChanged >= 200){
     number = 1;
   }
 
