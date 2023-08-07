@@ -199,12 +199,7 @@ $grey-line-style: (
 
 //////////////////////////////////
 .show-photo {
-    text-align: center;
-}
-
-.truck-img {
-    width: 100%;
-    height: 50rem;
+    position: relative;
 }
 
 .show-photo-heading {
@@ -212,11 +207,23 @@ $grey-line-style: (
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.4rem;
+    position: absolute;
+    left: 35%;
+    top: 50%;
 
     &::after {
         margin: 1rem auto 0rem;
         @include apply-line($red-line-style);
     }
+}
+
+.parallax {
+    background-image: url("../img/truck3.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 ///////////////////////////
@@ -792,6 +799,10 @@ $grey-line-style: (
 
     .product-position {
         left: 35%;
+    }
+
+    .about-us {
+        padding: 3rem 0;
     }
 
 }

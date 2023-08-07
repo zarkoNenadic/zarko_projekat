@@ -41,7 +41,3 @@ window.addEventListener("resize", (e)=>{
   });
 
 });
-
-
-
-
