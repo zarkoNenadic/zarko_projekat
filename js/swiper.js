@@ -31,3 +31,26 @@ function slider(){
 
 window.addEventListener("load",slider);
 window.addEventListener("resize", slider);
+
+
+let slider_image = document.querySelectorAll(".slider-image");
+let arrow = document.getElementById("arrow");
+let arrow_i = 1;
+
+arrow.addEventListener("click", function () {
+  for (let i = 0; i < slider_image.length; i++) {
+    if (arrow_i == i) {
+      slider_image[i].classList.remove('hidden');
+      arrow_i++; break;
+    }else{
+      slider_image[i].classList.add('hidden');
+    }
+    if (arrow_i == slider_image.length) {
+      for (let j = 0; j < slider_image.length; j++) {
+        slider_image[j].classList.add('hidden');
+        slider_image[0].classList.remove('hidden');
+      }
+      arrow_i = 1; break;
+    };
+  }
+})
