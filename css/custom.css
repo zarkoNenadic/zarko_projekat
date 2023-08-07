@@ -150,6 +150,14 @@ ul {
     background-color: #BF0F0F;
     margin-top: 1rem; }
 
+.parallax {
+  background-image: url("../img/truck3.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .section-cards {
   padding: 10rem; }
 
@@ -431,14 +439,6 @@ ul {
 .menu-lan-2 {
   display: none; }
 
-.parallax {
-  background-image: url("../img/truck3.png");
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 @media (max-width: 1500px) {
   .container {
     max-width: 130rem; } }
@@ -535,7 +535,9 @@ ul {
   .number {
     margin-top: 5rem; }
   .about-main-heading {
-    padding-top: 2rem; } }
+    padding-top: 2rem; }
+  .show-photo-heading {
+    left: 25%; } }
 
 @media (max-width: 840px) {
   .container {
@@ -554,7 +556,21 @@ ul {
   .product-position {
     left: 40%; }
   .section-products-text {
-    padding: 5% 10%; } }
+    padding: 5% 10%; }
+  .show-photo-heading {
+    left: 15%; } }
+
+@media (max-width: 650px) {
+  .show-photo-heading {
+    left: 10%; } }
+
+@media (max-width: 580px) {
+  .show-photo-heading {
+    left: 5%; } }
+
+@media (max-width: 550px) {
+  .show-photo-heading {
+    text-align: center; } }
 
 @media (max-width: 500px) {
   .section-brends {
@@ -566,7 +582,9 @@ ul {
   .product-position {
     left: 35%; }
   .about-us {
-    padding: 3rem 0; } }
+    padding: 3rem 0; }
+  .show-photo-heading {
+    font-size: 3.2rem; } }
 
 @media (max-width: 350px) {
   .section-brends {

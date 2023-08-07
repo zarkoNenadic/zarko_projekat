@@ -746,6 +746,10 @@ $grey-line-style: (
     .about-main-heading {
         padding-top: 2rem;
     }
+
+    .show-photo-heading {
+        left: 25%
+    }
 }
 
 @media(max-width:840px) {
@@ -782,6 +786,27 @@ $grey-line-style: (
         padding: 5% 10%;
     }
 
+    .show-photo-heading {
+        left: 15%
+    }
+}
+
+@media (max-width:650px) {
+    .show-photo-heading {
+        left: 10%
+    }
+}
+
+@media (max-width:580px) {
+    .show-photo-heading {
+        left: 5%
+    }
+}
+
+@media (max-width:550px) {
+    .show-photo-heading {
+        text-align: center;
+    }
 }
 
 @media (max-width:500px) {
@@ -805,6 +830,9 @@ $grey-line-style: (
         padding: 3rem 0;
     }
 
+    .show-photo-heading {
+        font-size: 3.2rem;
+    }
 }
 
 @media (max-width:350px) {
