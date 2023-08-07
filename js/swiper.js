@@ -1,6 +1,22 @@
 let number = 5;
 
-window.addEventListener("load",()=>{
+function slider(){
+  let browserWidth = window.innerWidth;
+  
+  number = 5;
+  
+  if(browserWidth > 1600){
+    number = 5;
+  }else if(browserWidth < 1500 && browserWidth >= 1290){
+    number = 4;
+  }else if(browserWidth < 1290 && browserWidth >= 900){
+    number = 3;
+  }else if(browserWidth < 900 && browserWidth >= 700){
+    number = 2;
+  }else if(browserWidth < 700 && browserWidth >= 200){
+    number = 1;
+  }
+  
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: number,
     spaceBetween: 30,
@@ -10,34 +26,8 @@ window.addEventListener("load",()=>{
       prevEl: ".swiper-button-prev",
     },
   });
-});
 
-window.addEventListener("resize", (e)=>{
+}
 
-  let browserWidthChanged = window.innerWidth;
-  
-  number = 5;
-  
-  if(browserWidthChanged > 1600){
-    number = 5;
-  }else if(browserWidthChanged < 1500 && browserWidthChanged >= 1290){
-    number = 4;
-  }else if(browserWidthChanged < 1290 && browserWidthChanged >= 900){
-    number = 3;
-  }else if(browserWidthChanged < 900 && browserWidthChanged >= 700){
-    number = 2;
-  }else if(browserWidthChanged < 700 && browserWidthChanged >= 200){
-    number = 1;
-  }
-
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: number,
-    spaceBetween: 30,
-    loop:true,
-   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  });
-
-});
+window.addEventListener("load",slider);
+window.addEventListener("resize", slider);
