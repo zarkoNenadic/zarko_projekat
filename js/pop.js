@@ -16,7 +16,7 @@ function showPopup() {
     window.addEventListener("scroll", handleScroll);
   }
   
-  wait(4500);
+  wait(4000);
   
   document.querySelector("#closePopup").addEventListener("click", function () {
     document.querySelector(".popup").style.display = "none";

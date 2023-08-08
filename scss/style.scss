@@ -757,6 +757,7 @@ $grey-line-style: (
 
     .nav-links.active {
         display: flex;
+        z-index: 99;
     }
 
     .brends {
@@ -775,6 +776,13 @@ $grey-line-style: (
         align-items: center;
         gap: 3rem;
     }
+
+    .footer-line {
+        border-bottom: 1px solid #FFFFFF33;
+        width: 40%;
+        margin: 0 auto;
+    }
+
 
     .web-links {
         padding-right: 2rem;
