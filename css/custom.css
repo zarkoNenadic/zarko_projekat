@@ -8,6 +8,10 @@
 ul {
   list-style: none; }
 
+.dark {
+  background-color: #000 !important;
+  color: #fff !important; }
+
 .container {
   max-width: 144rem;
   margin: 0 auto; }
@@ -479,6 +483,11 @@ ul {
   padding: 5px 10px;
   cursor: pointer; }
 
+.svg-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer; }
+
 @media (max-width: 1500px) {
   .container {
     max-width: 130rem; } }
@@ -632,6 +641,8 @@ ul {
 @media (max-width: 700px) {
   .product-position {
     left: 40%; }
+  .burger-menu {
+    margin-right: 3rem; }
   .section-products-text {
     padding: 5% 10%; }
   .show-photo-heading {
